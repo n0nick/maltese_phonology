@@ -1,29 +1,32 @@
-\documentclass[12pt,draft]{article}
-
-\usepackage{tipa}
-% \usepackage{OTtablx}
-
 \title{Maltese}
 \author{
-        Sagie Maoz \\
-                Department of Linguistics\\
+        \textsc{Sagie Maoz}\\
+        Department of Linguistics\\
         Tel Aviv University\\
-        Tel Aviv, \underline{Israel}
+        % Tel Aviv, 69978, \underline{Israel}\\
+		\\
+        \normalsize
+            \texttt{sagiemao@mail.tau.ac.il}
 }
-\date{1st Draft\\\today}
+\date{
+	1st Draft\\
+	\today
+}
+\documentclass[11pt,draft]{article}
+
+\usepackage[paper=a4paper,dvips,top=1.5cm,left=1.5cm,right=1.5cm,
+    foot=1cm,bottom=1.5cm]{geometry}
+
+\usepackage{tipa} % IPA font type
+% \usepackage{OTtablx} % OT Tablaux formats
+%\usepackage{times} % Adobe Times as default font
 
 \begin{document}
 \maketitle
 
 \section{Language}
-Maltese is the national language of Malta. It is a Semitic language spoken by around 400,000 speakers\cite{Capdevila2004}.\\
+Maltese is the national language of Malta. It is a Semitic language spoken by almost 400,000 people\cite{Azzopardi-Alexa1996}.\\
 Maltese is a descendant of the \emph{Siculo-Arabic} dialect developed in Sicily and Malta, later to be heavily influenced by Italian, Sicilian and English vocabularies.
-
-\section{Data source} % sources*
-\begin{itemize}
-\item Azzopardi-Alexa. (1996). \emph{Maltese}. Routledge.
-% \item Comrie, B. (2009). \emph{Introducing Maltese Linguistics: Selected Papers from the 1st International Conference on Maltese Linguistics, Bremen, 18-20 October, 2007}. John Benjamins Publishing.
-\end{itemize}
 
 \section{Phonetic inventory}
 
@@ -35,17 +38,22 @@ Maltese is a descendant of the \emph{Siculo-Arabic} dialect developed in Sicily 
 \multicolumn{2}{c|}{Dental} &
 \multicolumn{2}{c|}{Alveolar} &
 \multicolumn{2}{c|}{Velar} &
-\multicolumn{2}{c|}{Pharyngeal} &
-\multicolumn{2}{c|}{Glottal}\\\hline\hline
+\multicolumn{2}{c|}{Palatal} &
+\multicolumn{2}{c|}{Laryngeal}\\\hline\hline
 Nasals & & m  &  & & & n & & & & & & \\\hline
-Stops & p & b & t & & & & k & & & & \textipa{P} & \\\hline
-Affricates & & & \t{ts} & \t{dz} & \t{t\textipa{S}} & \t{d\textipa{Z}} & & & & & &\\\hline
-Fricatives & f & v & s & z & \textipa{S} & & & & \textcrh & & & \\\hline
+Stops & p & b & t & d & & & k & g & & & \textipa{P} & \\\hline
+Affricates & & & \textipa{\t{ts}} & \textipa{\t{dz}} & \textipa{\t{tS}} & \textipa{\t{dZ}} & & & & & &\\\hline
+Fricatives & f & v & s & z & \textipa{S} & & & & & & h & \\\hline
 Trills & & & & r & & & & & & & & \\\hline
-Approximants & & l & & & & & & & & & & \\\hline
+Approximants & & l & & & & & & & & j & & \\\hline
 \end{tabular}
 
+\mbox{}\\\\
+Additionally, the voiced labial-velar approximant \textipa{/w/}.
+
 \subsection{Vowels}
+
+\subsubsection{Monophtongs}
 \begin{tabular}{l||c|c|c|c|c|c|}
 &
 \multicolumn{2}{c|}{Front} &
@@ -53,37 +61,56 @@ Approximants & & l & & & & & & & & & & \\\hline
 \multicolumn{2}{c|}{Back} \\\hline\hline
 High & \textipa{I} & \textipa{I:} \textipa{i:} & & & \textipa{U} & \textipa{U:} \\\hline
 Mid  & \textipa{E} & \textipa{E:} & & & \textipa{O} & \textipa{O:} \\\hline
-Low  & \textipa{6} & \textipa{6:} & & & & \\\hline
+Low  & & & \textipa{5} & \textipa{5:} & & \\\hline
 \end{tabular}
 
-\subsection{Diphthongs}
+\mbox{}\\\\
+I will normally use \textipa{/a/, /e/, /i/, /o/, /u/} to denote \textipa{/5/, /E/, /I/, /O/, /U/}, respectively.
+
+\subsubsection{Diphthongs}
 Seven diphthongs exist in Maltese:
-/\textipa{6I}/,
-/\textipa{EI}/,
-/\textipa{6U}/,
-/\textipa{EU}/,
-/\textipa{IU}/,
-/\textipa{OI}/ and
-/\textipa{OU}/.
+\textipa{/5U/},
+\textipa{/5I/},
+\textipa{/EU/},
+\textipa{/EI/},
+\textipa{/IU/},
+\textipa{/OI/} and
+\textipa{/OU/}.
+
+\pagebreak
 
 \section{Syllable inventory}
+\begin{tabular}{l||c c|c c|c c|}
+&
+\multicolumn{2}{c|}{Word Initial} &
+\multicolumn{2}{c|}{Word Medial} &
+\multicolumn{2}{c|}{Word final} \\\hline\hline
+V & \textipa{\underline{U}.nU:r} & 'honour' & \multicolumn{2}{c|}{---} & \multicolumn{2}{c|}{---} \\\hline
+CV & \textipa{\underline{kI}.tEp} & 'he wrote' & \textipa{m5h.\underline{mU}.\t{dZ}i:n} & 'dirty (pl.)' & \textipa{ip.\underline{kI}} & 'cry (Imp.)' \\\hline
+VC & \textipa{\underline{ip}.kI} & 'cry (Imp.)' & \multicolumn{2}{c|}{---} & \multicolumn{2}{c|}{---} \\\hline
+CVC & \textipa{\underline{pEt}.nE} & 'comb' & \textipa{O.\underline{r5n}.\t{dZ}O} & 'orange' & \textipa{I:.\underline{bEs}} & 'hard' \\\hline
+CVV & \textipa{\underline{d5:}.r5} & 'her house' & \textipa{bIP.\underline{zI:}.PEs} & 'with pigs' & \textipa{5\t{tS}.\t{tS}Et.\underline{t5:}} & 'he accepted it (f.)' \\\hline
+CCVC & \textipa{\underline{tlIf}.t5} & 'I lost it (f.)' & \textipa{5\t{tS}.\underline{\t{tS}Et}.t5} & 'he accepted' & \textipa{PO.rO.\underline{blOk}} & 'it (m.) has\\
+& & & & & &  drawn nearer in time'\\\hline
+\end{tabular}
+\mbox{}\\\\
+Many more syllable structures are allowed; Borg-Azzopardi\cite{Azzopardi-Alexa1996} define the canonical syllable as \\(C)(C)(C)V(C)(C) for monosyllabic words and (C)(C)V(C) for multisyllabic words.
+
+\section{Generalizations}
 TODO
 
-\section{Generalisations}
-TODO
-
+\renewcommand\refname{Data sources}
 \bibliographystyle{abbrv}
 \bibliography{maltese}
 
 \end{document}
 
 TODO:
-1. Text about diphthongs
-2. a "high front lax long vowel""?
-3. Syllable inventory
-4. Generalisations
-5. Make sure vowels are correct
-6. Hide bibliography?
+1. Generalizations
+
+Bibliography:
+\bibliographystyle{abbrv}
+\bibliography{maltese}
 
 Abstract code:
 
