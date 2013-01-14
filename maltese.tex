@@ -19,7 +19,7 @@
 \usepackage{tabularx} % For tables width control
 \usepackage{tipa} % IPA font type
 % \usepackage{OTtablx} % OT Tablaux formats
-% \usepackage{times} % Adobe Times as default font
+% \usepackage{times} % Adobe Times as default font\usepackage{pstricks}\usepackage{colortab}%\usepackage{pifont}
 
 \usepackage{chicago} % Chicago Bibliography style
 
@@ -386,6 +386,9 @@ It's easy enough to think of a constraint that would avoid this form, though:
 \\
 
 Combining constraints (7) and (8) we can explain both \textsl{+t} and \textsl{+\O} inflected forms of the verb quite easily.
+\\
+
+\begin{tabular}{|rrl||c|c|c|}\hline\multicolumn{3}{|c||}{/\textipa{"h5t5f+Et}/} & {\sc *SOMETHING} & {\sc *V[-stress]} & {\sc *CC} \\ \hline\hline a. &  & \textipa{"h5t5fEt} &  & **! & \\ \hline b. &  & \textipa{"ht5fEt} & *! & * & \\ \hline c. & $\rightarrow$ & \textipa{"h5tfEt} &  & * & \\ \hline d. &  & \textipa{"h5t5ft} &  & * & *!\\ \hline\end{tabular}
 
 \bibliographystyle{chicago}
 \bibliography{maltese}
