@@ -376,19 +376,25 @@ That is precisely the kind of issues that are better handled by Optimality Theor
 As mentioned, we speculate that the two vowel deletions we witnessed are related to the vowels originally being unstressed.
 Therefore, let's formulate a constraint that would express this:
 
-\paragraph*{(7)} {\sc *V[-stress]}
+\paragraph*{(7)} {{\sc *V[-stress]} - No unstressed vowels (syllables).}
 \\
 
 Looking at table (5), this constraint would indeed explain the deletions in examples (b), but alone it would fail to explain why the vowel wasn't deleted in examples (1a), resulting for example in [\textipa{*\textsl{h5tf}}].
 It's easy enough to think of a constraint that would avoid this form, though:
 
-\paragraph*{(8)} {\sc *ComplexCoda}
+\paragraph*{(8)} {{\sc *ComplexCoda} - Syllables do not end with a consonant sequence.}
 \\
 
-Combining constraints (7) and (8) we can explain both \textsl{+t} and \textsl{+\O} inflected forms of the verb quite easily.
+Let's add a rather obvious constraint that would account for the stress system always being present in PR.
+
+\paragraph* {(9)} {{\sc MaxStress} - Maximize input stress in the output.}
 \\
 
-\begin{tabular}{|rrl||c|c|c|}\hline\multicolumn{3}{|c||}{/\textipa{"h5t5f+Et}/} & {\sc *SOMETHING} & {\sc *V[-stress]} & {\sc *CC} \\ \hline\hline a. &  & \textipa{"h5t5fEt} &  & **! & \\ \hline b. &  & \textipa{"ht5fEt} & *! & * & \\ \hline c. & $\rightarrow$ & \textipa{"h5tfEt} &  & * & \\ \hline d. &  & \textipa{"h5t5ft} &  & * & *!\\ \hline\end{tabular}
+Combining these three constraints we can explain both \textsl{+t} and \textsl{+\O} inflected forms of the verb quite easily.
+\\
+
+\paragraph*{(10)} {\mbox{}}
+\begin{tabular}{|rrl||c|c|c|}\hline\multicolumn{3}{|c||}{/\textipa{"h5t5f+Et}/} & {\sc MaxStress} & {\sc *V[-stress]} & {\sc *CC} \\ \hline\hline a. &  & \textipa{"h5t5fEt} &  & **! & \\ \hline b. &  & \textipa{"ht5fEt} & *! & * & \\ \hline c. & $\rightarrow$ & \textipa{"h5tfEt} &  & * & \\ \hline d. &  & \textipa{"h5t5ft} &  & * & *!\\ \hline\end{tabular}
 
 \bibliographystyle{chicago}
 \bibliography{maltese}
