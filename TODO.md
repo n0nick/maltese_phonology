@@ -1,4 +1,4 @@
-- All document: double space, 12pt font
+v All document: double space, 12pt font
 v "Below we list the..." - not bold
 - Syllable generalizations - first item - remove last 'syllable' symbol
 v Stress system: "... stress system is as _follows_"

@@ -26,6 +26,9 @@
 
 \usepackage{chicago} % Chicago Bibliography style
 
+\usepackage{setspace}
+\doublespacing
+
 % count paragraphs
 \setcounter{secnumdepth}{5}
 
@@ -116,8 +119,6 @@ Maltese is a descendant of the \emph{Siculo-Arabic} dialect developed in Sicily 
 
 Additionally, the voiced labial-velar approximant \textipa{/w/}.
 
-\pagebreak
-
 \paragraph*{(2) Vowels}
 
 \subparagraph*{a. Monophtongs:}
@@ -158,6 +159,8 @@ Seven diphthongs exist in Maltese:\\\
 \textipa{/IU/},
 \textipa{/OI/} and
 \textipa{/OU/}.
+
+\pagebreak
 
 \subsubsection*{(3) Syllable structures}
 
@@ -378,6 +381,8 @@ While it's possible to draw up a different rule to explain the deletion in (c), 
 Thus, it would be ideal if we could formulate some unified system, that explains these alternations, in relation to their motivation.
 That is precisely the kind of issues that are better handled by Optimality Theory (OT) which makes use of constraints and their underlying order to explain phonological phenomenons and conspirations. 
 
+\pagebreak
+
 \section {OT to the rescue}
 
 \subsection {Unstressed vowel deletion}
@@ -393,8 +398,6 @@ It's easy enough to think of a constraint that would avoid this form, though:
 
 \paragraph*{(8)} {{\sc *ComplexCoda} - Syllables do not end with a consonant sequence.}
 \\
-
-\pagebreak
 
 Let's add a rather obvious constraint that would account for the stress system always being present in PR.
 
@@ -419,7 +422,6 @@ However, there is no obvious order between {\sc *V[-stress]} and {\sc *CC}. Swit
 Thus, we have so far been able to establish a ranking:
 
 \paragraph* {(11)} {{\sc MaxStress >> *V[-stress], *CC}}
-\\
 
 \subsection{No vowel deletion}
 
@@ -444,6 +446,8 @@ In order to inspect candidate d in tableau (13) below, let's formulate the const
 
 Here in (13) we indeed witness that {\sc *CC} dominates {\sc *V[-stress]}. If we would have ordered these 2 constraints the other way around, then candidate (13a) would have been rejected in favour of candidate (13c), but that is not the case in PR.
 \\
+
+\pagebreak
 
 In addition, we notice that {\sc MaxStem} dominates both of these, because otherwise none of the constraints in (13) would have rejected candidate (13d). Generally, we must assume {\sc MaxStem} has a high priority, to maintain the existence of stems in Maltese.
 So our constraints ranking so far are:
