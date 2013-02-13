@@ -8,3 +8,6 @@
 - 2.2 - Consider removing MaxStem definition (relevant to 2.3 only?)
 - 2.3 - Continue analysis, provide tablaus
 - References - add references to theory
+- Syllable structures table:
+  - CCCV example "ptra:vu" is wrong
+  - Add "V:", "CV:C" and "CCCV:" rows, possibly others with V:
