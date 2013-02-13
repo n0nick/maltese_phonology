@@ -2,7 +2,7 @@
 v "Below we list the..." - not bold
 - Syllable generalizations - first item - remove last 'syllable' symbol
 v Stress system: "... stress system is as _follows_"
-- Stress system: Mention "this is the stress system of Standard Arabic"
+v Stress system: Mention "this is the stress system of Standard Arabic"
 - Theoretical Background first paragraph - change "empty suffix" to "_zero_ suffix"
 - "firstly, we can clearly see in chart (3)..." - repeat here a few examples
 - 2.2 - Consider removing MaxStem definition (relevant to 2.3 only?)
