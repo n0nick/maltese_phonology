@@ -1,5 +1,5 @@
 - All document: double space, 12pt font
-- "Below we list the..." - not bold
+v "Below we list the..." - not bold
 - Syllable generalizations - first item - remove last 'syllable' symbol
 - Stress system: "... stress system is as _follows_"
 - Stress system: Mention "this is the stress system of Standard Arabic"
