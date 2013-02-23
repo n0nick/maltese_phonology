@@ -7,7 +7,7 @@ v Theoretical Background first paragraph - change "empty suffix" to "_zero_ suff
 - "firstly, we can clearly see in chart (3)..." - repeat here a few examples
 - 2.2 - Consider removing MaxStem definition (relevant to 2.3 only?)
 - 2.3 - Continue analysis, provide tablaus
-- References - add references to theory
+- References - Add theoretical references
 - Syllable structures table:
   - CCCV example "ptra:vu" is wrong
   - Add "V:", "CV:C" and "CCCV:" rows, possibly others with V:
