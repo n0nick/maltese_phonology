@@ -8,6 +8,7 @@ v "firstly, we can clearly see in chart (3)..." - repeat here a few examples
 - 2.2 - Consider removing MaxStem definition (relevant to 2.3 only?)
 - 2.3 - Continue analysis, provide tablaus
 - References - Add theoretical references
+- Rename MaxStress to Head(PrWd)
 - Syllable structures table:
   v CCCV example "ptra:vu" is wrong
   ? Better word-medial CCCV example
