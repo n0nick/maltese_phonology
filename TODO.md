@@ -9,7 +9,7 @@ v 2.2 - Consider removing MaxStem definition (relevant to 2.3 only?)
 v 2.3 - Continue analysis, provide tablaus
 v References - Add theoretical references
 v Rename MaxStress -> Head(PrWd)
-- Epenthesis as alternative? (=> low DEP constraint)
+v Epenthesis as alternative? (=> low DEP constraint)
 - Conclusion section
 - Syllable structures table:
   v CCCV example "ptra:vu" is wrong

@@ -493,6 +493,30 @@ We have explained so far how Maltese chooses to preserve its stress system and s
 	\item[(17) {\sc Dep}] - Output segments must have input correspondents \cite[68]{kager1999optimality}.
 \end{description}
 
+Re-analysing /\textsl{\textipa{h5t5f+t}}/ with the epenthesis option in mind, we must consider a new candidate (18f):
+
+\paragraph*{(18)} {}
+\begin{tabular}{|rrl||c|c|c|c|c|}\hline
+\multicolumn{3}{|c||}{/\textipa{h5t5f+t}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc Dep} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
+% a. & & \textipa{h5"t5ft} & & & & * & *! \\ \hline
+ b. & $\rightarrow$ & \textipa{"ht5ft} & & & & * & \\ \hline
+% c. & & \textipa{ht5ft} & *! & & & * & \\ \hline
+% d. & & \textipa{"h5tft} & & * & & **! & \\ \hline
+% e. & & \textipa{h5"t5t} & & *! & & & * \\ \hline
+ f. & & \textipa{h5"t5fEt} & & & *! & & * \\ \hline
+\end{tabular}
+\\
+
+Without the new {\sc Dep} constraint, candidate (18f) would only violate {\sc *V[-stress]} which we have already established is ranked lowest within the discussed constraints, and so it would be the optimal candidate.
+This reflects the need to discuss {\sc Dep} and its ranking. From tableau (18) we conclude that {\sc Dep} necessarily dominates {\sc *CC} (otherwise, epenthesis would have been selected).
+As in 2.3, we have no evidence for the ranking of {\sc Dep} against {\sc Head(PrWd)} and {\sc MaxStem}, and from the analysed examples it seems the three are perfectly interchangeable.
+
+Our constraints ranking is finalised, then, as in (19) below.
+
+\begin{description}
+	\item[(19)] {\sc Head(PrWd), MaxStem, Dep >> *CC >> *V[-stress]}
+\end{description}
+
 \bibliographystyle{chicago}
 \bibliography{maltese}
 
