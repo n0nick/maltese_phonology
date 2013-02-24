@@ -11,3 +11,4 @@ v "firstly, we can clearly see in chart (3)..." - repeat here a few examples
 - Syllable structures table:
   - CCCV example "ptra:vu" is wrong
   - Add "V:", "CV:C" and "CCCV:" rows, possibly others with V:
+  - Show sources with footnotes
