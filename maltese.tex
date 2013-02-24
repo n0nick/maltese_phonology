@@ -399,7 +399,7 @@ It's easy enough to think of a constraint that would avoid this form, though:
 
 Let's add a rather obvious constraint that would account for the stress system always being present in PR.
 
-\paragraph* {(9)} {{\sc MaxStress} - Maximize input stress in the output.}
+\paragraph* {(9)} {{\sc Head(PrWd)} - Each prosodic word has a unique head \cite[78]{mccarthy2002thematic} and therefore, it has stress.}
 \\
 
 Combining these three constraints we can explain both \textsl{+t} and \textsl{+\O} inflected forms of the verb quite easily.
@@ -407,7 +407,7 @@ Combining these three constraints we can explain both \textsl{+t} and \textsl{+\
 
 \paragraph*{(10)} {\mbox{}}
 \begin{tabular}{|rrl||c|c|c|}\hline
-\multicolumn{3}{|c||}{/\textipa{"h5t5f+Et}/} & {\sc MaxStress} & {\sc *V[-stress]} & {\sc *CC} \\ \hline\hline
+\multicolumn{3}{|c||}{/\textipa{"h5t5f+Et}/} & {\sc Head(PrWd)} & {\sc *V[-stress]} & {\sc *CC} \\ \hline\hline
  a. &  & \textipa{"h5t5fEt} &  & **! & \\ \hline
  b. &  & \textipa{"ht5fEt} & *! & * & \\ \hline
  c. & $\rightarrow$ & \textipa{"h5tfEt} &  & * & \\ \hline
@@ -415,11 +415,11 @@ Combining these three constraints we can explain both \textsl{+t} and \textsl{+\
 \end{tabular}
 \\
 
-We can identify in (10) that {\sc MaxStress} dominates the two other constraints, because otherwise candidate (10b) would surely be selected.\\
+We can identify in (10) that {\sc Head(PrWd)} dominates the two other constraints, because otherwise candidate (10b) would surely be selected.\\
 However, there is no obvious order between {\sc *V[-stress]} and {\sc *CC}. Switching these two around would not affect the system's outcome.\\
 Thus, we have so far been able to establish a ranking:
 
-\paragraph* {(11)} {{\sc MaxStress >> *V[-stress], *CC}}
+\paragraph* {(11)} {{\sc Head(PrWd) >> *V[-stress], *CC}}
 
 \subsection{No vowel deletion}
 
@@ -434,7 +434,7 @@ In order to inspect candidate d in tableau (13) below, let's formulate the const
 
 \paragraph*{(13)} {\mbox{}}
 \begin{tabular}{|rrl||c|c|c|c|}\hline
-\multicolumn{3}{|c||}{/\textipa{h5t5f+\O}/} & {\sc MaxStress} & {\sc MaxStem} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
+\multicolumn{3}{|c||}{/\textipa{h5t5f+\O}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
  a. & $\rightarrow$ & \textipa{"h5t5f} &  &  &  & *\\ \hline
  b. &  & \textipa{ht5f} & *! &  &  & \\ \hline
  c. &  & \textipa{"h5tf} &  &  & *! & \\ \hline
@@ -450,7 +450,7 @@ Here in (13) we indeed witness that {\sc *CC} dominates {\sc *V[-stress]}. If we
 In addition, we notice that {\sc MaxStem} dominates both of these, because otherwise none of the constraints in (13) would have rejected candidate (13d). Generally, we must assume {\sc MaxStem} has a high priority, to maintain the existence of stems in Maltese.
 So our constraints ranking so far are:
 
-\paragraph*{(14)} {\sc MaxStress, MaxStem >> *CC >> *V[-stress]}
+\paragraph*{(14)} {\sc Head(PrWd), MaxStem >> *CC >> *V[-stress]}
 
 \subsection{Stressed vowel deletion}
 
@@ -497,7 +497,7 @@ This is the paper's abstract \ldots
 
 \paragraph*{(16)} {\mbox{}}
 \begin{tabular}{|rrl||c|c|c|c|c|}\hline
-\multicolumn{3}{|c||}{/\textipa{h5t5f+t}/} & {\sc MaxStress} & {\sc MaxStem} & {\sc Dep} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
+\multicolumn{3}{|c||}{/\textipa{h5t5f+t}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc Dep} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
  a. &  & \textipa{"h5tft} &  &  &  & **! & \\ \hline
  b. &  & \textipa{"h5t5fEt} &  &  & *! &  & *\\ \hline
  c. &  & \textipa{ht5fEt} & *! &  & * &  & **\\ \hline
