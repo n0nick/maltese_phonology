@@ -12,4 +12,4 @@ v "firstly, we can clearly see in chart (3)..." - repeat here a few examples
   v CCCV example "ptra:vu" is wrong
   - CCCV example "dis.tin.tsjo:.ni" is wrong
   - Add "V:", "CV:C" and "CCCV:" rows, possibly others with V:
-  - Show sources with footnotes
+  v Show sources with footnotes
