@@ -428,10 +428,10 @@ Let's now analyse the \textsl{+\O} inflection in examples (a), where vowel delet
 
 \paragraph*{(12)} {\mbox{}}
 \begin{tabular}{|rrl||c|c|c|c|}\hline
-\multicolumn{3}{|c||}{/\textipa{h5t5f+\O}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
- a. & $\rightarrow$ & \textipa{"h5t5f} &  &  &  & *\\ \hline
- b. &  & \textipa{ht5f} & *! &  &  & \\ \hline
- c. &  & \textipa{"h5tf} &  &  & *! & \\ \hline
+\multicolumn{3}{|c||}{/\textipa{h5t5f+\O}/} & {\sc Head(PrWd)} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
+ a. & $\rightarrow$ & \textipa{"h5t5f} &   &  & *\\ \hline
+ b. &  & \textipa{ht5f} & *! &  & \\ \hline
+ c. &  & \textipa{"h5tf} &  & *! & \\ \hline
 % d. &  & \textipa{"h5t5} &  & *! &  & \\ \hline
 \end{tabular}
 \\
@@ -447,53 +447,46 @@ So we have been able to confirm a tighter constraints ranking:
 \subsection{Stressed vowel deletion}
 
 \paragraph*{}
-The ranking we have established so far seems to be fairly straightforward and to explain the first two examples quite nicely.
-However, moving on to the third and last example, /\textsl{\textipa{h5t5f+t}}/, we encounter a serious problem.
+The ranking we have established so far seems to be fairly straightforward, and explains the first two examples quite nicely.
+Moving on to the third and final example, /\textsl{\textipa{h5t5f+t}}/, we are facing another constraint required for the system to be complete.
 
-Using the system defined so far, we would have assumed an output *[\textsl{\textipa{h5t5ft}}].
-Yet the actual output turns out to be [\textsl{\textipa{ht5ft}}], which violates {\sc *CC} and is a result of deleting the first [\textsl{\textipa{5}}] vowel.
-Taking into account rule (a) of the stress system in (4), we can conclude that the main stress in /\textsl{\textipa{h5t5f+t}}/ falls on the second syllable, and so {\sc *V[-stress]} is not violated in [\textsl{\textipa{ht5ft}}].
-We are left with the question of ranking between {\sc *CC} and {\sc *V[-stress]}, and how it might affect /\textsl{\textipa{h5t5f+\O}}/ and /\textsl{\textipa{h5t5f+t}}/.
+The \textsl{+t} suffix, when attached directly to the stem, necessarily creates a complex coda if the stem ends with a consonant.
+In other words, {\sc*CC} is violated unless one of the stem segments is deleted.
+Let's formulate a constraint to protect such stem segments from being deleted:
 
-% In order to inspect candidate d in tableau (13) below, let's formulate the constraint we assume in semitic languages that protects the stem segments from deletions:
+\begin{description}
+ 	\item[(14) {\sc MaxStem}] - Every segment of the input stem has a correspondent in the output stem \cite{chatzopoulos2008optimal}.
+\end{description}
 
-% \begin{description}
-% 	\item[(14) {\sc MaxStem}] - Every segment of the input stem has a correspondent in the output stem \cite{chatzopoulos2008optimal}.
-% \end{description}
+Generally, we might assume that {\sc MaxStem} has a high priority, to maintain the existence and semantics of stems in Maltese.
 
-% In addition, we notice that {\sc MaxStem} dominates both of these, because otherwise none of the constraints in (13) would have rejected candidate (13d). Generally, we must assume {\sc MaxStem} has a high priority, to maintain the existence of stems in Maltese.
+\pagebreak
 
-% that we assume was originally the stressed vowel.
-%\\
+We can now suggest a tableau explaining /\textsl{\textipa{h5t5f+t}}/:
 
-%In fact, that last assumption might be misleading; taking into account rule (a) of the stress system (See (4)), 
+\paragraph*{(15)} {}
+\begin{tabular}{|rrl||c|c|c|c|}\hline
+\multicolumn{3}{|c||}{/\textipa{h5t5f+t}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
+ a. & & \textipa{h5"t5ft} & & & * & *! \\ \hline
+ b. & $\rightarrow$ & \textipa{"ht5ft} & & & * & \\ \hline
+ c. & & \textipa{ht5ft} & *! & & * & \\ \hline
+ d. & & \textipa{"h5tft} & & & **! & \\ \hline
+ e. & & \textipa{h5"t5t} & & *! & & * \\ \hline
+\end{tabular}
+\\
 
-%In (1a) \textsl{\textipa{/h5t5f+t/}} we 
+Our constraints system is indeed able to reject candidates (15a), (15c), (15d) and (15e), selecting the remaining (15b) [\textipa{\textsl{"ht5ft}}]. This candidate, while violating {\sc *CC}, is still the optimal candidate in (15).
 
+Notice that in order for tableau (15) to be valuable, we must conclude that the new constraint {\sc MaxStem} dominates both {\sc *CC} and {\sc *V[-stress]}. Otherwise, candidate (15e) would surely be selected.
+That being said, we do not have any information about the ranking between {\sc Head(PrWd)} and {\sc MaxStem}, and they seem interchangeable.
 
 \bibliographystyle{chicago}
 \bibliography{maltese}
 
 \end{document}
 
-TODO:
-1. References - city after publisher name
-2. References - Last, F. and F. Last
-3. References - alphabetize
-4. Compete main part
-5. Add stress to examples (1), (2)
 
-CODES:
-Bibliography:
-\bibliographystyle{acm} % acmtrans??
-\bibliography{maltese}
-
-Abstract:
-\begin{abstract}
-This is the paper's abstract \ldots
-\end{abstract}
-
-\paragraph*{(16)} {\mbox{}}
+\paragraph*{(16)} {}
 \begin{tabular}{|rrl||c|c|c|c|c|}\hline
 \multicolumn{3}{|c||}{/\textipa{h5t5f+t}/} & {\sc Head(PrWd)} & {\sc MaxStem} & {\sc Dep} & {\sc *CC} & {\sc *V[-stress]} \\ \hline\hline
  a. &  & \textipa{"h5tft} &  &  &  & **! & \\ \hline
@@ -504,19 +497,17 @@ This is the paper's abstract \ldots
  f. & $\rightarrow$ & \textipa{h5t5ft} &  &  &  & * & *\\ \hline
 \end{tabular}
 
-%\section*{References}
-%
-%\begin{itemize}
-%
-%	\item Borg, A., and M. Azzopardi-Alexander. 1997. \emph{Maltese}. New York: Routledge.
-%	
-%	\item Brame, M. 1974. The cycle in phonology: Stress in palestinian, maltese, and spanish. \emph{Linguistic Inquiry 5}, 1 (1974), pp. 39-60. 
+Using the system defined so far, we would have assumed an output *[\textsl{\textipa{h5t5ft}}].
+Yet the actual output turns out to be [\textsl{\textipa{ht5ft}}], which violates {\sc *CC} and is a result of deleting the first [\textsl{\textipa{5}}] vowel.
+Taking into account rule (a) of the stress system in (4), we can conclude that the main stress in /\textsl{\textipa{h5t5f+t}}/ falls on the second syllable, and so {\sc *V[-stress]} is not violated in [\textsl{\textipa{ht5ft}}].
+We are left with the question of ranking between {\sc *CC} and {\sc *V[-stress]}, and how it might affect /\textsl{\textipa{h5t5f+\O}}/ and /\textsl{\textipa{h5t5f+t}}/.
 
-%	\item Wolf, M. 2012. Cyclicity and non-cyclicity in maltese: Local ordering of phonology and morphology in OT-CC. \emph{Harmonic Grammar and Harmonic Serialism}, 2012.
-%
-%\end{itemize}
+In addition, we notice that {\sc MaxStem} dominates both of these, because otherwise none of the constraints in (13) would have rejected candidate (13d).
 
+% that we assume was originally the stressed vowel.
+%\\
 
+%In fact, that last assumption might be misleading; taking into account rule (a) of the stress system (See (4)), 
 
 % ???? ????? ???
 % DEP 
