@@ -370,40 +370,33 @@ An additional challenge with such analysis arises when reviewing the data for th
 \end{table}
 
 In the (c) forms above, we again notice a deletion of a stem vowel; but this time, it is the first stem vowel that is removed, to create a $CCVCC$ syllable.
-\\
 
 This new data set forces us to rethink our analysis.
 While it's possible to draw up a different rule to explain the deletion in (c), the two vowel deletion processes appear to have some common motivation, especially noticing that the deleted vowel is always un-stressed.
-\\
 
 Thus, it would be ideal if we could formulate some unified system that explains these alternations, in relation to their motivation.
 That is precisely the kind of issues that are better handled by Optimality Theory \cite{kager1999optimality} which makes use of constraints and their underlying order to explain phonological phenomenons and conspiracies \cite{kisseberth1970functional}.
-
-\pagebreak
 
 \section {OT to the rescue}
 
 \subsection {Unstressed vowel deletion}
 
+\paragraph*{}
 As mentioned, we speculate that the two vowel deletions we witnessed are related to the vowels originally being unstressed.
 Therefore, let's formulate a constraint that would express this:
 
 \paragraph*{(7)} {{\sc *V[-stress]} - No unstressed vowels (syllables).}
-\\
 
 Looking at table (5), this constraint would indeed explain the deletions in examples (b), but alone it would fail to explain why the vowel wasn't deleted in examples (a), resulting for example in *[\textipa{\textsl{h5tf}}].
 It's easy enough to think of a constraint that would avoid this form, though:
 
 \paragraph*{(8)} {{\sc *ComplexCoda} - Syllables do not end with a consonant sequence.}
-\\
 
 Let's add a rather obvious constraint that would account for the stress system always being present in PR.
 
 \paragraph* {(9)} {{\sc Head(PrWd)} - Each prosodic word has a unique head \cite[78]{mccarthy2002thematic} and therefore, it has stress.}
-\\
 
 Combining these three constraints we can explain both \textsl{+t} and \textsl{+\O} inflected forms of the verb quite easily.
-\\
 
 \paragraph*{(10)} {\mbox{}}
 \begin{tabular}{|rrl||c|c|c|}\hline
@@ -426,7 +419,6 @@ Thus, we have so far been able to establish a ranking:
 \paragraph*{}
 Let's now analyse the \textsl{+\O} inflection in examples (a), where vowel deletion does not occur:
 [\textsl{\textipa{h5t5f}}] does include an unstressed vowel, and so violates {\sc *V[-stress]}, and that would prove a domination of {\sc *CC} over {\sc *V[-stress]}.
-\\
 
 % In order to inspect candidate d in tableau (13) below, let's formulate the constraint we assume in semitic languages that protects the stem segments from deletions:
 
@@ -443,7 +435,6 @@ Let's now analyse the \textsl{+\O} inflection in examples (a), where vowel delet
 \\
 
 Here in (12) we indeed witness that {\sc *CC} dominates {\sc *V[-stress]}. If we would have ordered these 2 constraints the other way around, then candidate (12a) would have been rejected in favour of candidate (12c), but that is not the case in PR.
-\\
 
 So we have been able to confirm a tighter constraints ranking:
 
@@ -458,13 +449,10 @@ So we have been able to confirm a tighter constraints ranking:
 
 The ranking we have established so far seems to be fairly straightforward and to explain the first two examples quite nicely.
 However, moving on to the third and last example, /\textsl{\textipa{h5t5f+t}}/, we encounter a serious problem.
-\\
 
 Using the system defined so far, we would have assumed an output *[\textsl{\textipa{h5t5ft}}].
 Yet the actual output turns out to be [\textsl{\textipa{ht5ft}}], which violates {\sc *CC} and is a result of deleting the first [\textsl{\textipa{5}}] vowel.
-
 Taking into account rule (a) of the stress system in (4), we can conclude that the main stress in /\textsl{\textipa{h5t5f+t}}/ falls on the second syllable, and so {\sc *V[-stress]} is not violated in [\textsl{\textipa{ht5ft}}].
-
 We are left with the question of ranking between {\sc *CC} and {\sc *V[-stress]}, and how it might affect /\textsl{\textipa{h5t5f+\O}}/ and /\textsl{\textipa{h5t5f+t}}/.
 
 % that we assume was originally the stressed vowel.
